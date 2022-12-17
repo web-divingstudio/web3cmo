@@ -1,0 +1,45 @@
+.about {
+  &__section {
+    padding: rem(128) 0 0;
+  }
+
+  &__container {
+    border-bottom: 1px solid rgba(166, 166, 176, 0.25);
+    padding-bottom: rem(128);
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    max-width: 352px;
+    margin-right: 48px;
+
+    img {
+      width: 100%;
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__btn {
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  &__text {
+    p {
+      line-height: 150%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    margin-bottom: rem(32);
+  }
+
+}
