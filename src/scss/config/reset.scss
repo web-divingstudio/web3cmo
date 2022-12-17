@@ -4,6 +4,7 @@
   border: 0;
   box-sizing: border-box;
   color: $fontColor;
+  font-size: rem(24);
 }
 
 *:before, *:after {
@@ -27,7 +28,7 @@ html,body {
   height: 100%;
 	font-size: $fontSize;
   font-family: $mainFontFamily;
-  font-weight: 400;
+  font-weight: 300;
 	line-height: 1;
 }
 

@@ -1,18 +1,21 @@
 $maxWidth: 1920; // максимальная ширина страницы
 $minWidth: 320; // минимальная ширина телефона
-$maxWidthContainer: 1200; // ширина контейнера с учетом padding слева и справа
-$containerWidth: 1160; // ширина контейнера из макета
+$maxWidthContainer: 1160; // ширина контейнера с учетом padding слева и справа
+$containerWidth: 1120; // ширина контейнера из макета
 
-$mainOffset: 15; // отступы безопасности для контейнера
-$mainFont: ''; // указать здесь основное семейство шрифта
+$mainOffset: 20; // отступы безопасности для контейнера
+$mainFont: 'SF UI Display'; // указать здесь основное семейство шрифта
 
-$headerHeight: 100;
+$headerHeight: 128;
 $footerHeight: 100;
 
 $whiteColor: #fff;
-$blackColor: #131313;
-$grayColor: #6f6f6f;
+$blackColor: #1D1D1F;
+$grayColor: #A6A6B0;
 $redColor: #ff4040;
+$gradientColor: linear-gradient(91.73deg, #7CCBF2 -5.69%, #0F9EE4 109.32%);
+$grayBg: #FBFAFA;
+
 
 $firstAccentColor: $blackColor;
 $secondAccentColor: $redColor;

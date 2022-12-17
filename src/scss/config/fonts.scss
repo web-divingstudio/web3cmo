@@ -1,14 +1,35 @@
 @font-face {
-  font-family: Inter;
+  font-family: SF UI Display;
   font-display: swap;
-  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  src: url("../fonts/sf-ui-display-bold.woff2") format("woff2"), url("../fonts/sf-ui-display-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: Inter;
+  font-family: SF UI Display;
   font-display: swap;
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/sf-ui-display-heavy.woff2") format("woff2"), url("../fonts/sf-ui-display-heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: SF UI Display;
+  font-display: swap;
+  src: url("../fonts/sf-ui-display-light.woff2") format("woff2"), url("../fonts/sf-ui-display-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: SF UI Display;
+  font-display: swap;
+  src: url("../fonts/sf-ui-display-medium.woff2") format("woff2"), url("../fonts/sf-ui-display-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SF UI Display;
+  font-display: swap;
+  src: url("../fonts/sf-ui-display-semibold.woff2") format("woff2"), url("../fonts/sf-ui-display-semibold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
