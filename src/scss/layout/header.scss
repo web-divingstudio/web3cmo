@@ -1,62 +1,66 @@
 // =====================================================================================================================
 .header {
-  width: 100%;
-  // .header__container
-  &__container {
-    height: rem($headerHeight);
-    display: flex;
-    align-items: center;
-  }
-}
-// =====================================================================================================================
+	width: 100%;
+	background: rgba(255, 255, 255, 0.45);
+	border-bottom: 1px solid rgba(166, 166, 176, 0.05);
+	backdrop-filter: blur(10px);
 
-// Burger
-/*
-.icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: rem(30);
-		height: rem(18);
-		cursor: pointer;
-		z-index: 5;
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 300ms ease 0ms;
-			right: 0;
-			position: absolute;
-			width: 100%;
-			height: rem(2);
-			background-color: #000;
+	// .header__container
+	&__container {
+		height: rem($headerHeight);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include media(990) {
+			height: rem(78);
 		}
-		&::before {
-			top: 0;
+	}
+
+	&__menu {}
+
+	&__logo {
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 100%;
+		text-transform: capitalize;
+
+		@include media(990) {
+			font-size: 24px;
+			line-height: 100%;
 		}
-		&::after {
-			bottom: 0;
+	}
+
+	.menu {
+		&__list {
+			display: flex;
+			align-items: center;
 		}
-		span {
-			top: calc(50% - rem(1));
-		}
-		.menu-open & {
-			span {
-				width: 0;
+
+		&__link {
+			font-size: 22px;
+			line-height: 100%;
+
+			@include media (990) {
+				font-size: 16px;
 			}
-			&::before,
-			&::after {
-			}
-			&::before {
-				top: calc(50% - rem(1));
-				transform: rotate(-45deg);
-			}
-			&::after {
-				bottom: calc(50% - rem(1));
-				transform: rotate(45deg);
+
+			&.btn {
+				background: linear-gradient(91.73deg, #64BDE9 -5.69%, #29AAEA 109.32%);
+				border-radius: 6px;
+				padding: 12px 16px;
+				max-width: 112px;
+				font-size: 22px;
+				line-height: 140%;
+				margin-left: 24px;
+
+				@include media (990) {
+					max-width: 90px;
+					font-size: 16px;
+				}
 			}
 		}
 	}
 }
-*/
+
+// =====================================================================================================================
