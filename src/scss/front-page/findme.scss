@@ -1,0 +1,96 @@
+.findme {
+  &__section {
+    padding: rem(177) 0;
+    background: url(../images/findme__bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    @include media (990) {
+      background: none;
+      padding: 0;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__block {
+    margin: 0 auto;
+    background: #FBFAFA;
+    box-shadow: 0px 258px 155px rgba(0, 0, 0, 0.02), 0px 115px 115px rgba(0, 0, 0, 0.03), 0px 29px 63px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 432px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: linear-gradient(91.73deg, rgba(124, 203, 242, 0.15) -5.69%, rgba(15, 158, 228, 0.15) 109.32%);
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      right: -1px;
+      left: -1px;
+      z-index: -1;
+      border-radius: 17px;
+    }
+
+    @include media (990) {
+      padding: 48px 72px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: rem(40);
+    text-align: center;
+
+    @include media (990) {
+      font-size: 40px;
+      line-height: 125%;
+      margin-bottom: rem(48);
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+      max-width: 64px;
+      margin-bottom: 8px;
+    }
+
+    span {
+      font-size: 15px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: lowercase;
+      color: #A6A6B0;
+    }
+  }
+
+  &__toprated {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 64px;
+    }
+  }
+}

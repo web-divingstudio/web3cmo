@@ -8,7 +8,6 @@
   }
 
   &__box {
-    // margin: 0 16px;
     background: #FBFAFA;
     border-radius: 16px;
     overflow: hidden;
@@ -22,6 +21,7 @@
   &__post {
     padding: 0 16px;
     width: 50%;
+    margin-bottom: 55px;
 
     &-img {
       max-width: 100%;
@@ -40,6 +40,10 @@
     &-excerpt {
       font-size: 20px;
       line-height: 160%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
     }
   }
 }
