@@ -1,0 +1,25 @@
+.blog {
+  &__page {
+    padding: rem(128) 0;
+
+    @include media(990) {
+      padding: rem(96) 0;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D1D1F;
+    margin-bottom: rem(64);
+
+    @include media(990) {
+      margin-bottom: rem(48);
+      font-size: 40px;
+      line-height: 125%;
+    }
+  }
+}
