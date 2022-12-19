@@ -1,0 +1,95 @@
+.advantages {
+  &__section {
+    padding: rem(128) 0 rem(80);
+
+    @include media (990) {
+      padding: rem(96) 0;
+    }
+  }
+
+
+  &__title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: rem(80);
+
+    @include media (990) {
+      font-size: 40px;
+      line-height: 125%;
+      margin-bottom: rem(48);
+    }
+
+    @include media (440) {
+      font-size: 32px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: rem(58);
+
+    @include media(990) {
+      margin-bottom: rem(24);
+    }
+
+    @include media(768) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    max-width: 352px;
+    width: 100%;
+    background: #FBFAFA;
+    border-radius: 16px;
+    padding: 42px 32px;
+    margin-bottom: rem(22);
+
+    @include media (990) {
+      max-width: 416px;
+      padding: 32px;
+      margin: 0 auto rem(24);
+    }
+
+    @include media (440) {
+      padding: 20px;
+    }
+  }
+
+  &__box-icon {
+    width: 64px;
+    margin-bottom: rem(32);
+  }
+
+  &__box-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: rem(16);
+
+    @include media (990) {
+      font-size: 32px;
+      line-height: 120%;
+    }
+  }
+
+  &__box-text {
+    font-size: 18px;
+    line-height: 160%;
+
+    @include media (990) {
+      font-size: 20px;
+      line-height: 160%;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
