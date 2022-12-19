@@ -1,0 +1,191 @@
+.single {
+  padding: rem(128) 0 rem(256);
+
+  @include media(990) {
+    padding: rem(96) 0 rem(112);
+  }
+
+  &__container {
+    max-width: rem(800);
+  }
+
+  &__image {
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    margin-bottom: rem(32);
+  }
+
+  &__date {
+    margin-bottom: rem(32);
+    display: flex;
+    align-items: center;
+  }
+
+  &__date-img {
+    margin-right: 12px;
+    max-width: 22px;
+
+    @include media (990) {
+      max-width: 18px;
+    }
+  }
+
+  &__date-value {
+    font-size: 18px;
+    line-height: 140%;
+    color: #A6A6B0;
+
+    @include media (990) {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: rem(64);
+
+    @include media (990) {
+      font-size: 40px;
+      line-height: 125%;
+      margin-bottom: rem(48);
+    }
+  }
+
+  &__blog-section {
+    padding-bottom: rem(128);
+
+    @include media(768) {
+      display: none;
+    }
+  }
+
+  &__blog-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: rem(64);
+  }
+
+  //universal style
+  &__content {
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      margin-bottom: rem(32);
+      margin-top: rem(64);
+
+      @include media (990) {
+        margin-top: rem(48);
+        margin-bottom: rem(24);
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 120%;
+      margin-top: rem(48);
+      margin-bottom: rem(24);
+
+      @include media (990) {
+        margin-top: rem(40);
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      margin-top: rem(32);
+      margin-bottom: rem(24);
+
+      @include media (990) {
+        margin-top: rem(24);
+        margin-bottom: rem(16);
+      }
+    }
+
+    blockquote {
+      position: relative;
+      padding-left: rem(16);
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: flex;
+        height: 100%;
+        width: 4px;
+        left: 0;
+        background: linear-gradient(176.48deg, #7CCBF2 -15.23%, #0F9EE4 134.82%);
+      }
+
+      @include media (990) {}
+    }
+
+    hr {
+      opacity: 0.25;
+      border: 1px solid #A6A6B0;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 140%;
+      margin-bottom: rem(24);
+
+      @include media (990) {
+        font-size: 20px;
+        line-height: 140%;
+      }
+
+      strong {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: rem(24);
+
+        @include media (990) {
+          font-size: 20px;
+          line-height: 140%;
+        }
+      }
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    ol,
+    ul {
+      margin-bottom: rem(32);
+      padding-left: rem(12);
+
+      @include media (990) {
+        margin-bottom: rem(24);
+      }
+    }
+
+    li {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 140%;
+      margin-bottom: rem(12);
+
+      @include media (990) {
+        font-size: 20px;
+        margin-bottom: rem(8);
+      }
+    }
+  }
+}
