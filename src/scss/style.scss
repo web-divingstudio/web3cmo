@@ -29,7 +29,7 @@
 @import 'layout/btn';
 @import 'layout/blog__post';
 @import 'layout/footer';
-
+@import 'layout/modal';
 //главная страница
 @import 'front-page/head';
 @import 'front-page/about';
@@ -42,4 +42,7 @@
 @import 'blog/home';
 
 //single
-@import 'single/page-style'
+@import 'single/page-style';
+
+//privacy
+@import 'privacy/page-style';

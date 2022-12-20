@@ -1,18 +1,20 @@
 .cmo {
   &__section {
-    padding: rem(128) 0 0;
+    padding: rem(128) 0;
 
     @include media (990) {
-      padding: rem(96) 0 0;
+      padding: rem(96) 0;
     }
-  }
 
-  &__container {
-    border-bottom: 1px solid rgba(166, 166, 176, 0.25);
-    padding-bottom: rem(128);
-
-    @include media (990) {
-      padding-bottom: rem(96);
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: rem($containerWidth);
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(166, 166, 176, 0.25);
     }
   }
 
@@ -49,12 +51,12 @@
     max-width: 736px;
 
     p {
-      margin-bottom: rem(36);
+      margin-bottom: rem(20);
       line-height: 150%;
 
       @include media (990) {
         font-size: 20px;
-        margin-bottom: rem(30);
+        margin-bottom: rem(15);
       }
 
       @include media (440) {
@@ -91,7 +93,10 @@
 
   &__btn {
     margin-top: 4px;
-    margin: 0 auto;
+
+    @include media(990) {
+      margin: 0 auto;
+    }
   }
 
   &__img {

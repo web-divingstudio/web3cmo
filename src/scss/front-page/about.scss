@@ -1,20 +1,25 @@
 .about {
   &__section {
-    padding: rem(128) 0 0;
+    padding: rem(128) 0;
 
     @include media (990) {
-      padding: rem(96) 0 0;
+      padding: rem(96) 0;
+    }
+
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: rem($containerWidth);
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(166, 166, 176, 0.25);
     }
   }
 
-  &__container {
-    border-bottom: 1px solid rgba(166, 166, 176, 0.25);
-    padding-bottom: rem(128);
-
-    @include media (990) {
-      padding-bottom: rem(96);
-    }
-  }
 
   &__block {
     display: flex;
@@ -29,6 +34,7 @@
   &__img {
     max-width: 352px;
     margin-right: 48px;
+    width: 100%;
 
     @include media(768) {
       order: 2;

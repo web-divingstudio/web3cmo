@@ -49,7 +49,7 @@
     background: #FBFAFA;
     border-radius: 16px;
     padding: 42px 32px;
-    margin-bottom: rem(22);
+    margin-bottom: rem(32);
 
     @include media (990) {
       max-width: 416px;
@@ -57,9 +57,9 @@
       margin: 0 auto rem(24);
     }
 
-    @include media (440) {
-      padding: 20px;
-    }
+    // @include media (440) {
+    //   padding: 20px;
+    // }
   }
 
   &__box-icon {

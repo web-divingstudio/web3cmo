@@ -46,6 +46,10 @@
     @include media (990) {
       padding: 48px 72px;
     }
+
+    @include media (450) {
+      padding: 48px;
+    }
   }
 
   &__title {
