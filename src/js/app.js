@@ -36,3 +36,15 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
     body.classList.remove('lock'); // И для самого окна
   }
 });
+
+
+let element = document.getElementById('topbutton');
+if (element) {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+      element.classList.add("active");
+    } else {
+      element.classList.remove("active");
+    }
+  });
+}
