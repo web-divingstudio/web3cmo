@@ -61,9 +61,6 @@
   &__blog-section {
     padding-bottom: rem(128);
 
-    @include media(768) {
-      display: none;
-    }
   }
 
   &__blog-title {
@@ -73,6 +70,13 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: rem(64);
+
+    @include media(990) {
+      text-align: left;
+      font-size: 40px;
+      line-height: 125%;
+      margin-bottom: rem(48);
+    }
   }
 
   //universal style
@@ -235,7 +239,5 @@
         }
       }
     }
-
-    li {}
   }
 }
