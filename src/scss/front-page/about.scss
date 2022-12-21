@@ -85,6 +85,9 @@
     line-height: 100%;
     margin-bottom: rem(32);
 
+    @include media (990) {
+      margin-bottom: rem(24);
+    }
   }
 
 }

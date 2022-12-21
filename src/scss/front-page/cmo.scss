@@ -92,10 +92,10 @@
   }
 
   &__btn {
-    margin-top: 4px;
+    margin-top: 24px;
 
     @include media(990) {
-      margin: 0 auto;
+      margin: 24px auto 0;
     }
   }
 
