@@ -64,3 +64,35 @@
     }
   }
 }
+
+.topbutton {
+  opacity: 0;
+  transition: all 0.5s linear;
+
+  &.active {
+    opacity: 1;
+    transition: all 0.5s linear;
+  }
+
+  position: fixed;
+  bottom: 220px;
+  right: rem(90);
+  max-width: 60px;
+  z-index: 2;
+
+  @include media(990) {
+    max-width: 48px;
+    right: 40px;
+    bottom: 118px;
+  }
+
+  svg {
+    max-width: 60px;
+    max-height: 60px;
+
+    @include media(990) {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+}
