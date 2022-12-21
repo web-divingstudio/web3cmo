@@ -7,7 +7,7 @@
     <div class="single__date" data-aos="fade-up"><img src="<?php echo get_template_directory_uri()?>/images/icons/Calendar.svg" alt=""
         class="single__date-img"> <span class="single__date-value"><?php the_time('d F Y')?></span></div>
     <div class="single__title" data-aos="fade-up"><?php the_title();?></div>
-    <div class="single__content" data-aos="fade-up">
+    <div class="single__content">
       <?php the_content()?>
     </div>
   </div>
