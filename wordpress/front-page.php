@@ -1,31 +1,63 @@
 <?php get_header()?>
-<section class="head__section" data-aos="fade-up">
+<?php if( have_rows('first_section') ): ?>
+    <?php while( have_rows('first_section') ): the_row(); ?>
+      <section class="head__section" data-aos="fade-up">
         <div class="head__container">
           <div class="head__block-header">
-            <div class="head__box"><img src="images/icons/DeFi.svg" alt=""> <span>DeFi</span></div>
-            <div class="head__box"><img src="images/icons/Web 3.0.svg" alt=""> <span>Web 3.0</span></div>
-            <div class="head__box"><img src="images/icons/Decentrelazation.svg" alt=""> <span>Decentralization</span>
-            </div>
+              <?php if( have_rows('box_icon') ): ?>
+                <?php while( have_rows('box_icon') ): the_row(); ?>
+                <?php
+                    $cnt++;
+                    switch ($cnt) {
+                     
+                      case 1: case 2: case 3:
+                        $image = get_sub_field('icon');
+                          ?>
+                          <div class="head__box"> <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"><span><?php the_sub_field('text')?></span></div>
+                          <?php
+                          break;
+                      default:
+                          break;
+                  }
+                ?>
+                <?php endwhile; ?>
+              <?php endif; ?>  
           </div>
           <h1 class="head__title"><?php the_title()?></h1>
-          <h2 class="head__subtitle">Growing Blockchain Startups with Full Dedication for&nbspa&nbspFraction
-            of&nbspthe&nbspCost</h2><a href="#" class="btn open__modal head__btn">Get in touch</a>
+          <h2 class="head__subtitle"><?php the_sub_field('subtitle')?></h2><a href="#" class="btn open__modal head__btn">Get in touch</a>
           <div class="head__block">
-            <div class="head__box"><img src="images/icons/DeFi.svg" alt=""> <span>DeFi</span></div>
-            <div class="head__box"><img src="images/icons/Web 3.0.svg" alt=""> <span>Web 3.0</span></div>
-            <div class="head__box"><img src="images/icons/Decentrelazation.svg" alt=""> <span>Decentralization</span>
-            </div>
-            <div class="head__box"><img src="images/icons/NFT.svg" alt=""> <span>NFT</span></div>
-            <div class="head__box"><img src="images/icons/Metaverse.svg" alt=""> <span>Metaverse</span></div>
-            <div class="head__box"><img src="images/icons/DAO.svg" alt=""> <span>DAO</span></div>
+          <?php if( have_rows('box_icon') ): ?>
+            <?php while( have_rows('box_icon') ): the_row();?>
+            <?php $image = get_sub_field('icon');?>
+            <div class="head__box"> <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"><span><?php the_sub_field('text')?></span></div>
+            <?php endwhile; ?>
+          <?php endif; ?>  
           </div>
           <div class="head__block-footer">
-            <div class="head__box"><img src="images/icons/NFT.svg" alt=""> <span>NFT</span></div>
-            <div class="head__box"><img src="images/icons/Metaverse.svg" alt=""> <span>Metaverse</span></div>
-            <div class="head__box"><img src="images/icons/DAO.svg" alt=""> <span>DAO</span></div>
+            <?php if( have_rows('box_icon') ): ?>
+              <?php while( have_rows('box_icon') ): the_row();?>
+              <?php
+                $image = get_sub_field('icon');
+                $cnt2++;
+                    switch ($cnt2) {
+                      case 4: case 5: case 6:
+                        $image = get_sub_field('icon');
+                          ?>
+                          <div class="head__box"> <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"><span><?php the_sub_field('text')?></span></div>
+                          <?php
+                          break;
+                      default:
+                          break;
+                  }
+                ?>
+              <?php endwhile; ?>
+            <?php endif; ?>  
           </div>
         </div>
       </section>
+    <?php endwhile; ?>
+<?php endif; ?>  
+      
       <section class="about__section" data-aos="fade-up">
         <div class="about__container">
           <div class="about__block">
