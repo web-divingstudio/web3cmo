@@ -1,8 +1,8 @@
 .single {
-  padding: rem(128) 0 rem(256);
+  padding: rem(256) 0 rem(256);
 
   @include media(990) {
-    padding: rem(96) 0 rem(112);
+    padding: rem(176) 0 rem(96);
   }
 
   &__container {
@@ -237,6 +237,16 @@
           background-clip: text;
           text-fill-color: transparent;
         }
+      }
+    }
+
+    .is-layout-flex {
+      padding: 16px 24px 0;
+      background: #FBFAFA;
+      border-radius: 6px;
+
+      @include media(990) {
+        padding: 16px 16px 0;
       }
     }
   }

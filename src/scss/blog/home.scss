@@ -1,9 +1,9 @@
 .blog {
   &__page {
-    padding: rem(128) 0;
+    padding: rem(256) 0 rem(128);
 
     @include media(990) {
-      padding: rem(96) 0;
+      padding: rem(176) 0 rem(96);
     }
   }
 
