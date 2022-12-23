@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <header class="header" data-aos="fade-down">
-      <div class="header__container"><a href="<?php echo get_home_url(); ?>" class="header__logo logo">Orkhan Khalaf</a>
+      <div class="header__container"><a href="<?php echo get_home_url(); ?>" class="header__logo logo"><?php the_field('logo_text', 'option')?></a>
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item"><a href="<?php echo home_url( 'blog' ); ?>" class="menu__link">Blog</a></li>

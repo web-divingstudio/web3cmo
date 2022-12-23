@@ -10,7 +10,7 @@
             <?php
             $image = get_sub_field('image');
             ?>
-            <a href="<?php the_sub_field('link');?>" class="modal__box">
+            <a href="<?php the_sub_field('link');?>" class="modal__box" target="_blank">
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="modal__box-img"/>
               <span class="modal__box-text"><?php the_sub_field('linktext');?></span> 
             </a>

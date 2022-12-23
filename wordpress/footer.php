@@ -2,8 +2,8 @@
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__block">
-      <div class="footer__copy">Copyright © 2022 Orkhan Khalaf. All rights reserved.</div>
-        <?php the_privacy_policy_link( )?>
+      <div class="footer__copy">Copyright © <?php echo date("Y "); ?><?php the_field('footer__text', 'option')?></div>
+        <a href="<?php echo home_url( 'policy' ); ?>" class="privacy-policy-link">Privacy Policy</a>
     </div>
   </div>
 </footer>
