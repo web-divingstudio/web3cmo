@@ -2,6 +2,10 @@
   &__page {
     padding: rem(256) 0 rem(128);
 
+    @include media(1600) {
+      padding: rem(160) 0 rem(80);
+    }
+
     @include media(990) {
       padding: rem(176) 0 rem(96);
     }
@@ -16,10 +20,19 @@
     color: #1D1D1F;
     margin-bottom: rem(64);
 
+    @include media(1600) {
+      font-size: rem(56);
+    }
+
     @include media(990) {
       margin-bottom: rem(48);
       font-size: 40px;
       line-height: 125%;
+    }
+
+    @include media(415) {
+      font-size: rem(32);
+      margin-bottom: rem(32);
     }
   }
 }

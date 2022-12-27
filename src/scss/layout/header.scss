@@ -17,21 +17,22 @@
 		align-items: center;
 		justify-content: space-between;
 
-		@include media(990) {
-			height: rem(78);
+		@include media(1600) {
+			height: rem(80);
 		}
 	}
 
-	&__menu {}
-
 	&__logo {
 		font-weight: 600;
-		font-size: 32px;
+		font-size: rem(32);
 		line-height: 100%;
 		text-transform: capitalize;
 
+		@include media (1600) {
+			font-size: rem(24);
+		}
+
 		@include media(990) {
-			font-size: 24px;
 			line-height: 100%;
 		}
 	}
@@ -43,11 +44,15 @@
 		}
 
 		&__link {
-			font-size: 22px;
+			font-size: rem(22);
 			line-height: 100%;
 
+			@include media (1600) {
+				font-size: rem(18);
+			}
+
 			@include media (990) {
-				font-size: 16px;
+				font-size: rem(16);
 			}
 
 			&.btn {
@@ -59,6 +64,10 @@
 				line-height: 140%;
 				margin-left: 24px;
 				box-shadow: none;
+
+				@include media (1600) {
+					max-width: 130px;
+				}
 
 				@include media (990) {
 					max-width: 90px;

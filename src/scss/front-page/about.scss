@@ -2,8 +2,16 @@
   &__section {
     padding: rem(128) 0;
 
+    @include media(1600) {
+      padding: rem(80) 0;
+    }
+
     @include media (990) {
       padding: rem(96) 0;
+    }
+
+    @include media(415) {
+      padding: rem(65) 0;
     }
 
     position: relative;
@@ -32,8 +40,8 @@
   }
 
   &__img {
-    max-width: 352px;
-    margin-right: 48px;
+    max-width: rem(352);
+    margin-right: rem(48);
     width: 100%;
 
     @include media(768) {
@@ -50,16 +58,20 @@
   }
 
   &__btn {
-    font-size: 20px;
+    font-size: rem(20);
     max-width: 100%;
 
     @include media(990) {
-      padding: 20px 20px;
+      padding: rem(20);
     }
 
     @include media (768) {
-      max-width: 416px;
+      max-width: rem(416);
       margin: 0 auto;
+    }
+
+    @include media (415) {
+      font-size: rem(18);
     }
   }
 
@@ -69,13 +81,22 @@
       margin-bottom: 1rem;
 
       @include media(990) {
-        font-size: 20px;
+        font-size: rem(20);
         line-height: 150%;
+      }
+
+      @include media (415) {
+        font-size: rem(18);
       }
     }
 
     @include media(768) {
       margin-bottom: rem(24);
+    }
+
+    @include media (415) {
+      font-size: rem(18);
+      margin-bottom: 1rem;
     }
   }
 
@@ -85,8 +106,18 @@
     line-height: 100%;
     margin-bottom: rem(32);
 
-    @include media (990) {
+    @include media (1600) {
+      font-size: 24px;
       margin-bottom: rem(24);
+    }
+
+    @include media (990) {
+      font-size: rem(32);
+    }
+
+    @include media (415) {
+      font-size: rem(28);
+      margin-bottom: rem(16);
     }
   }
 

@@ -1,5 +1,4 @@
 .blog {
-  &__section {}
 
   &__block {
     display: flex;
@@ -15,7 +14,11 @@
   }
 
   &__box-text {
-    padding: 32px;
+    padding: rem(32);
+
+    @include media(415) {
+      padding: rem(24);
+    }
 
     p {
       font-size: 20px;
@@ -24,17 +27,25 @@
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
+
+      @include media(415) {
+        font-size: rem(18);
+      }
     }
   }
 
   &__post {
-    padding: 0 16px;
+    padding: 0 rem(16);
     width: 50%;
-    margin-bottom: 55px;
+    margin-bottom: rem(55);
 
     @include media (768) {
       width: 100%;
-      margin-bottom: 24px;
+      margin-bottom: rem(24);
+    }
+
+    @include media (415) {
+      margin-bottom: rem(16);
     }
 
     &-img {
@@ -58,6 +69,11 @@
       font-size: 28px;
       line-height: 120%;
       margin-bottom: rem(16);
+
+      @include media(415) {
+        font-size: rem(24);
+        margin-bottom: rem(12);
+      }
     }
   }
 }
