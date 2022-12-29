@@ -1,6 +1,6 @@
 <div class="modal">
   <div class="modal__wrapper"></div>
-    <div class="modal__content" data-aos="fade-up">
+    <div class="modal__content">
       <?php if( have_rows('modal', 'option') ): ?>
         <?php while( have_rows('modal', 'option') ): the_row(); ?>
         <h2 class="modal__title"><?php the_sub_field('title')?></h2>

@@ -34,6 +34,10 @@
     max-width: rem(1000);
     margin: 0 auto rem(32);
 
+    @media (max-height:800px) {
+      margin-bottom: rem(24);
+    }
+
     @include media (1600) {
       font-size: rem(56);
       max-width: rem(900);
@@ -59,6 +63,9 @@
     line-height: 150%;
     max-width: 540px;
 
+    @media (max-height:800px) {
+      margin-bottom: rem(32);
+    }
 
     @include media (1600) {
       font-size: rem(20);
@@ -96,6 +103,10 @@
     padding-top: rem(130);
     margin-top: rem(-50);
     z-index: -1;
+
+    @media (max-height:800px) {
+      padding-top: 100px;
+    }
 
     &::before {
       content: "";
@@ -178,7 +189,7 @@
   }
 
   &__block-header {
-    margin-bottom: rem(60);
+    margin-bottom: rem(30);
 
     .head__box {
       &:nth-child(2) {
@@ -189,7 +200,7 @@
   }
 
   &__block-footer {
-    margin-top: rem(48);
+    margin-top: rem(30);
 
     .head__box {
       &:nth-child(2) {

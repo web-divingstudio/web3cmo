@@ -27,13 +27,24 @@
 		font-size: rem(32);
 		line-height: 100%;
 		text-transform: capitalize;
+		max-height: 100%;
 
 		@include media (1600) {
 			font-size: rem(24);
+			height: rem(80);
 		}
 
 		@include media(990) {
 			line-height: 100%;
+		}
+
+		img {
+			width: 100%;
+			max-height: rem(128);
+
+			@include media (1600) {
+				max-height: rem(80);
+			}
 		}
 	}
 

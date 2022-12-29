@@ -9,9 +9,21 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" data-aos="fade-down" data-aos-delay="500">
     <header class="header" data-aos="fade-down">
-      <div class="header__container"><a href="<?php echo get_home_url(); ?>" class="header__logo logo"><?php the_field('logo_text', 'option')?></a>
+      <div class="header__container">
+        <a href="<?php echo get_home_url(); ?>" class="header__logo logo">
+          <?php 
+          if( get_field('logo_image', 'option')) {
+            $logo = get_field('logo_image', 'option');
+            ?>
+            <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+            <?
+          } else {
+            the_field('logo_text', 'option');
+          }
+          ?>
+        </a>
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item"><a href="<?php echo home_url( 'blog' ); ?>" class="menu__link">Blog</a></li>
