@@ -24,6 +24,10 @@
     @include media (1600) {
       padding-bottom: rem(124);
     }
+
+    @media (max-height:850px) and (max-width:415px) {
+      padding-top: rem(110);
+    }
   }
 
 
@@ -51,6 +55,10 @@
 
     @include media (415) {
       font-size: 32px;
+      margin-bottom: rem(16);
+    }
+
+    @media (max-height:850px) and (max-width:415px) {
       margin-bottom: rem(16);
     }
   }
@@ -197,10 +205,17 @@
       }
     }
 
+    @media (max-height:850px) and (max-width:415px) {
+      margin-bottom: rem(25);
+    }
   }
 
   &__block-footer {
     margin-top: rem(30);
+
+    @media (max-height:850px) and (max-width:415px) {
+      margin-top: rem(25);
+    }
 
     .head__box {
       &:nth-child(2) {

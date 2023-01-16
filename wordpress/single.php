@@ -1,7 +1,7 @@
 <?php get_header()?>
 <div class="single">
   <div class="single__container">
-    <div class="single__image" data-aos="fade-up">
+    <div class="single__image" >
       <?php the_post_thumbnail()?>
     </div>
     <div class="single__date"><img src="<?php echo get_template_directory_uri()?>/images/icons/Calendar.svg" alt=""
@@ -21,9 +21,9 @@
 
     if ( $query->have_posts() ) {
       ?>
-      <section class="blog__section single__blog-section" data-aos="fade-up">
+      <section class="blog__section single__blog-section">
         <div class="blog__container">
-        <h2 class="single__blog-title" data-aos="fade-up">You might also like</h2>
+        <h2 class="single__blog-title" >You might also like</h2>
           <div class="blog__block single__blog-block">
       <?php
       while ( $query->have_posts() ) {

@@ -1,7 +1,7 @@
 <?php get_header()?>
 <?php if( have_rows('first_section') ): ?>
     <?php while( have_rows('first_section') ): the_row(); ?>
-      <section class="head__section" data-aos="fade-up">
+      <section class="head__section" >
         <div class="head__container">
           <div class="head__block-header">
               <?php if( have_rows('box_icon') ): ?>
@@ -59,7 +59,7 @@
 <?php endif; ?>  
 <?php if( have_rows('about') ): ?>
   <?php while( have_rows('about') ): the_row(); ?>  
-    <section class="about__section" data-aos="fade-up">
+    <section class="about__section" >
         <div class="about__container">
           <div class="about__block">
             <div class="about__img">
@@ -78,7 +78,7 @@
 <?php endif; ?> 
 <?php if( have_rows('cmo') ): ?>
   <?php while( have_rows('cmo') ): the_row(); ?>  
-    <section class="cmo__section" data-aos="fade-up">
+    <section class="cmo__section" >
       <div class="cmo__container">
         <div class="cmo__block">
           <div class="cmo__text">
@@ -103,7 +103,7 @@
       <div class="advantages__block">
       <?php if( have_rows('advantages_box') ): ?>
         <?php while( have_rows('advantages_box') ): the_row(); ?>  
-        <div class="advantages__box" data-aos="fade-up">
+        <div class="advantages__box" >
             <?php $image = get_sub_field('icon');?>
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="advantages__box-icon">
           <h3 class="advantages__box-title"><?php the_sub_field('box_title')?></h3>
@@ -112,14 +112,14 @@
         <?php endwhile; ?>
       <?php endif; ?> 
       </div>
-      <a href="#" class="btn open__modal advantages__btn" data-aos="fade-up">Get in Touch</a>
+      <a href="#" class="btn open__modal advantages__btn">Get in Touch</a>
     </div>
   </section>
   <?php endwhile; ?>
 <?php endif; ?> 
 <?php if( have_rows('find_me_on') ): ?>
   <?php while( have_rows('find_me_on') ): the_row(); ?> 
-  <section class="findme__section" data-aos="fade-up">
+  <section class="findme__section">
     <div class="findme__container">
       <div class="findme__block">
         <h2 class="findme__title"><?php the_sub_field('title')?></h2>
@@ -155,7 +155,7 @@
 
   if ( $query->have_posts() ) {
     ?>
-    <section class="blog__section featured__section" data-aos="fade-up">
+    <section class="blog__section featured__section">
       <div class="featured__container">
         <h2 class="featured__title">Featured blog posts</h2>
         <div class="blog__block featured__block">

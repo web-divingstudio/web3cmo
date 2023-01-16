@@ -43,6 +43,21 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+  animation: 0.8s fade ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .page {

@@ -1,5 +1,5 @@
 import { isWebp, headerFixed } from './modules'
-import AOS from 'aos'
+//import AOS from 'aos'
 /* Раскомментировать для использования */
 // import { MousePRLX } from './libs/parallaxMouse'
 
@@ -17,7 +17,7 @@ isWebp()
 // Фиксированный header ====================================================================================================================================================
 // headerFixed()
 // ====================================================================================================================================================
-AOS.init({ disable: 'mobile' });
+//AOS.init({ disable: 'mobile' });
 
 let popupBg = document.querySelector('.modal__wrapper'); // Фон попап окна
 let popup = document.querySelector('.modal'); // Само окно

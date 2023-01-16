@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="wrapper" data-aos="fade-down" data-aos-delay="500">
+  <div class="wrapper">
     <header class="header" data-aos="fade-down">
       <div class="header__container">
         <a href="<?php echo get_home_url(); ?>" class="header__logo logo">
