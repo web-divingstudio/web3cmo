@@ -48,3 +48,6 @@ if (element) {
     }
   });
 }
+window.addEventListener('load', function () {
+  document.querySelector('.wrapper').classList.add("visible-content");
+})
