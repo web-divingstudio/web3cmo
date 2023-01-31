@@ -48,6 +48,6 @@ if (element) {
     }
   });
 }
-window.addEventListener('load', function () {
-  document.querySelector('.wrapper').classList.add("visible-content");
-})
+// window.addEventListener('load', function () {
+//   document.querySelector('.preloader').classList.add("visible-content");
+// })

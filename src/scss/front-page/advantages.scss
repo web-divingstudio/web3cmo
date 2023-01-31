@@ -114,6 +114,9 @@
       line-height: 160%;
     }
 
+    @include media (415) {
+      font-size: 16px;
+    }
   }
 
   &__btn {

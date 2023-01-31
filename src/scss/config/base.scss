@@ -44,12 +44,12 @@ body {
   min-height: 100%;
   overflow: hidden;
   // animation: 0.5s fade ease;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s linear;
 
-  &.visible-content {
-    opacity: 1;
-  }
+  // &.visible-content {
+  //   opacity: 1;
+  // }
 }
 
 @keyframes fade {
