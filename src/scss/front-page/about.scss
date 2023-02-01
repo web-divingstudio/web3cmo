@@ -77,6 +77,10 @@
 
   &__text {
     max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 73px;
 
     p {
       line-height: 150%;
@@ -109,7 +113,6 @@
     line-height: 100%;
     font-size: rem(20);
     margin-bottom: rem(20);
-    margin-top: rem(20);
 
     @include media (990) {
       font-size: rem(32);
